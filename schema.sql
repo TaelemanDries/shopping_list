@@ -1,0 +1,17 @@
+# schema.sql
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE brands (
+  id   INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE drinks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  brand_id INTEGER NOT NULL,
+  quantity INTEGER NOT NULL,
+  bought INTEGER NOT NULL,
+  FOREIGN KEY (brand_id) REFERENCES brands(id)
+);
+
