@@ -1,4 +1,4 @@
-# schema.sql
+-- schema.sql
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE brands (
