@@ -15,7 +15,7 @@ def print_drinks(drinks):
         return
 
     print("ID | Brand | Drink | Qty | Bought")
-    print("-" * 62)
+    print("-------------------------------")
 
     for d in drinks:
         bought_txt = "YES" if d.is_bought() else "NO"
